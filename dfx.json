@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "bonytoony_backend": {
+      "declarations": {
+        "node_compatibility": true
+      },
+      "main": "src/bonytoony_backend/main.mo",
+      "type": "motoko"
+    },
+    "bonytoony_frontend": {
+      "dependencies": [
+        "bonytoony_backend"
+      ],
+      "source": [
+        "src/bonytoony_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "bonytoony_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
